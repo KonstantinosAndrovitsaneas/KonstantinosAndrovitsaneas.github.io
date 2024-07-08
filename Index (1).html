@@ -15,9 +15,23 @@
 
   <body mode="maker">
     <header class="mdl-color--cyan-500">
+      <button alt="Menu" class="Menu" onclick="toggleSideBar();">Menu</button>
       <h1 class="mode-maker">Music Maker</h1>
       <h1 class="mode-edit mode-blockly">Music Maker Configuration</h1>
+      <button alt="Menu" class="Menu" onclick="toggleSideBar();">EDIT</button>
+      <button alt="Menu" class="Menu" onclick="toggleSideBar();">SAVE</button>
+      <div>
+        
+      </div>
     </header>
+    
+    <div style="position: absolute; height: 100%; background-color: gray" id="sidebar">
+      <p>Open files:</p>
+      <button>Open...</button>
+      <div id="files">
+        
+      </div>
+    </div>
 
     <main>
       <button class="mode-maker mdl-button" id="edit">Edit</button>
@@ -45,6 +59,9 @@
           <div class="button mdl-color--teal-500">8</div>
           <div class="button mdl-color--green-500">9</div>
         </div>
+        <center>
+          <h3 style="top: 50%">Open a file</h3>
+        </center>
       </div>
 
       <div class="blockly-editor">
@@ -57,8 +74,8 @@
     <script src="https://unpkg.com/blockly/javascript_compressed.js"></script>
     <script src="https://unpkg.com/blockly/msg/en.js"></script>
     <script src="scripts/music_maker.js"></script>
+    <!-- <script src="scripts/blocks/datatypes.js"></script> -->
+    <script src="scripts/toolbox.js"></script>
     <script src="scripts/main.js"></script>
   </body>
-  
-  
 </html>
